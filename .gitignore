@@ -13,4 +13,6 @@ Lab0_Q0
 # Lab*_Q*/bin
 # Lab*_Q*/bin/*
 
+submissions
+
 !gradle-wrapper.jar
