@@ -14,14 +14,25 @@ dependencies {
 }
 
 application {
-    mainClass = "application.CPTSMachine"
+    mainClass = "game.DeckManager"
 }
 
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+
+        showExceptions true
+        exceptionFormat "full"
+        showCauses true
+        showStackTraces true
+
+        showStandardStreams = false
     }
+}
+
+jar {
+    from sourceSets.main.allSource
 }
 
 run {
