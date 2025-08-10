@@ -5,6 +5,9 @@
 build
 bin
 
+**/.classpath
+**/.project
+
 Lab0_Q0
 
 *.jar
