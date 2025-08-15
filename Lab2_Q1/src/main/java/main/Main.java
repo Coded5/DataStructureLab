@@ -26,7 +26,6 @@ public class Main {
 		System.out.println("Quest management system.");
 		
 		while(!isFinished) {
-			
 			if(currentUser!=null) {
 				
 				boolean hasOnGoingQuest = currentUser.getCurrentQuest()!=null;
