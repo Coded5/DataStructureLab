@@ -1,35 +1,33 @@
 package logic;
 
-import java.util.Objects;
 
 public class Message {
-	private String text;
-	private User sender;
-	
-	public Message(String text, User sender) {
-		setText(text);
-		setSender(sender);
-	}
+    private String text;
+    private User sender;
 
-	public String getText() {
-		return text;
-	}
+    public Message(String text, User sender) {
+        setText(text);
+        setSender(sender);
+    }
 
-	public void setText(String text) {
-		if (text.isBlank()) {
-			this.text = "<blank>";
-		} else {
-			this.text = text;
-		}
-	}
+    public String getText() {
+        return text;
+    }
 
-	public User getSender() {
-		return sender;
-	}
+    public void setText(String text) {
+        if (text.isBlank()) {
+            this.text = "<blank>";
+        } else {
+            this.text = text;
+        }
+    }
 
-	public void setSender(User sender) {
-		this.sender = sender;
-	}
+    public User getSender() {
+        return sender;
+    }
 
-	
+    public void setSender(User sender) {
+        this.sender = sender;
+    }
+
 }
