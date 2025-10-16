@@ -18,12 +18,12 @@ test {
     testLogging {
         events "passed", "skipped", "failed"
 
-        showExceptions true
-        exceptionFormat "full"
-        showCauses true
-        showStackTraces true
+        showExceptions = true
+        exceptionFormat = "full"
+        showCauses = true
+        showStackTraces = true
 
-        showStandardStreams = false
+        showStandardStreams = true
     }
 }
 
@@ -34,4 +34,3 @@ jar {
 run {
     standardInput = System.in
 }
-

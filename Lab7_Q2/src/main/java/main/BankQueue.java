@@ -20,6 +20,7 @@ public class BankQueue { // must work for any implementation of DeQ
         int queueLength = Math.round(rawQueueLength);
 
         for (int i = 0; i < counters.length; i++) {
+            System.out.println(i);
             if (counters[i].size() == queueLength)
                 continue;
 
